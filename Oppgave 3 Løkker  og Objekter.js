@@ -87,11 +87,11 @@ const people = [
   },
 ];
 
-const randomCity = cities[Math.floor(Math.random() * cities.length)];
 // console.log(randomCity);
 
 // Skriv koden for oppgave 1 her
 for (let i = 0; i < people.length; i++) {
+  const randomCity = cities[Math.floor(Math.random() * cities.length)];
   if (people[i].name === "Otto") continue;
   people[i].city = randomCity;
   people[i].title = people[i].male ? "Mr." : "Ms.";
